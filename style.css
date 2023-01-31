@@ -1,0 +1,284 @@
+* {
+    font-family: 'Inter', sans-serif;
+    background-color: #e5e5e5;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1440px;
+    max-height: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    display: block;
+    width: 65%;
+}
+
+.logo {
+    width: 6em;
+    margin-top: 1.9em;
+}
+
+section {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    left: 9em;
+    top: 0.8em;
+}
+
+.area-texto {
+    width: 100%;
+    height: 530px;
+    font-size: 25px;
+    resize: none;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+}
+
+.nota {
+    font-size: 12px;
+    font-family: 'Inter', 'sans-serif';
+}
+
+.area-texto::placeholder {
+    font-size: 25px;
+    color: #0A3871;
+    font-weight: bold;
+}
+
+.botones {
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0a3871;
+    border-radius: 24px;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-size: 22px;
+    margin-right: 5%;
+}
+
+.btn-encriptar:hover {
+    border: 1px solid #072B61;
+    background-color: #072B61;
+}
+
+.btn-encriptar:active{
+    background-color: #6D8FC2;
+    color: white
+}
+
+.btn-desencriptar {
+    border: 1px solid #0a3871;
+    color: #0A3871;
+    border-radius: 24px;
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+}
+
+.btn-desencriptar:hover {
+    border: 2px solid #0A3871;
+    background-color: #EFF1FA;
+}
+
+.btn-desencriptar:active {
+    background-color: #A0AEC2;
+    color: white;
+}
+
+.visual {
+    height: 100%;
+    text-align: center;
+    border-radius: 32px;
+    width: 27%;
+    background-color: white;
+    margin-left: 35px;
+}
+
+.mensaje {
+    width: 90%;
+    height: 530px;
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    resize: none;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background-image: url(img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mensaje::placeholder {
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    line-height: 1.5em;
+    color: #0A3871;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-copiar {
+    border: 1px solid #0a3871;
+    color: #0A3871;
+    border-radius: 24px;
+    width: 80%;
+    max-width: 250px;
+    height: 60px;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.btn-copiar:hover {
+    border: 2px solid #0A3871;
+    background-color: #EFF1FA;
+}
+
+.btn-copiar:active {
+    background-color: #A0AEC2;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #8b8b8c;
+}
+
+.links-personales {
+    display: flex;
+    justify-content: center;
+    background-color: #8b8b8c;
+}
+
+.links-personales a {
+    margin: 15px;
+    background-color: #8b8b8c;
+}
+
+.links-personales a img {
+    width: 30px;
+    background-color: #8b8b8c;
+}
+
+footer p {
+    font-family: 'Inter', sans-serif;
+    background-color: #8b8b8c;
+}
+
+.mencion {
+    padding-top: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.creditos {
+    padding: 15px;
+}
+
+@media screen and (max-width: 820px) {
+
+    section {
+        width: auto;
+        position: static;
+        display: block;
+        margin: 2% 0 0 2%;
+    }
+
+    .caja-texto {
+        text-align: center;
+    }
+
+    .area-texto {
+        width: 97%;
+        height: 22em;
+        margin: 0 auto;
+    }
+
+    .botones {
+        width: 100%;
+        position: relative;
+        right: 9%;
+        margin: 1em 7%;
+    }
+
+    .btn-encriptar {
+        margin: auto;
+    }
+
+    .btn-desencriptar {
+        margin: auto;
+    }
+
+    .visual {
+        margin: 2em auto;
+        width: 90%;
+        height: 24.5em;
+    }
+
+    .mensaje {
+        background-image: none;
+        height: 11em;
+        font-size: 25px;
+    }
+
+    .mensaje::placeholder {
+        line-height: 11em;
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 415px) {
+    
+
+    .caja-texto {
+        width: 100%;
+    }
+    .area-texto {
+        height: 12em;
+    }
+
+    .botones {
+        display: block;
+        text-align: center;
+        margin: 1em 7%;
+    }
+
+    .btn-encriptar {
+        width: 80%;
+        margin-bottom: 0.5em;
+    }
+
+    .btn-desencriptar {
+        width: 80%;
+    }
+
+    .visual {
+        width: 98%;
+        margin: 0 auto;
+        height: 20em;
+    }
+
+    .mensaje {
+        height: 62%;
+    }
+
+    .mensaje::placeholder {
+        font-size: 18px;
+    }
+}
